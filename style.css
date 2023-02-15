@@ -2,11 +2,15 @@
     box-sizing: border-box;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+}
+
 .grid-mother-box{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    border: 2px black solid;
+    justify-content: center;
     height: 25rem;
     width: 25rem;
 }
