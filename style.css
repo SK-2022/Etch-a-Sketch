@@ -1,7 +1,10 @@
 * {
+    font-size: 62.5%;
     box-sizing: border-box;
 }
-
+body{
+    font-size: 3rem;
+}
 .container{
     display: flex;
     justify-content: center;
@@ -11,17 +14,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    height: 25rem;
-    width: 25rem;
+    height: 27rem;
+    width: 40rem;
     gap: 0px;
 }
 
 .grid-box {
-    height: 1.5rem;
-    width: 1.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border: 0.5px black solid;
 }
 
 .grid-box-color-change{
-    background-color: aqua;
+    background-color:grey;
 }
