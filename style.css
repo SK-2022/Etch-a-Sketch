@@ -5,24 +5,34 @@
 body{
     font-size: 3rem;
 }
+
+.change-grid-size{
+        background-color: blue; /* Green */
+        border: none;
+        color: white;
+        padding: 1rem 3rem;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1.6rem;
+        border-radius: 1.2rem;
+}
 .container{
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 
 .grid-mother-box{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(24, 1fr);
     justify-content: center;
-    height: 27rem;
-    width: 40rem;
-    gap: 0px;
+    height: 400px;
+    width: 400px;
 }
 
 .grid-box {
-    height: 2.5rem;
-    width: 2.5rem;
-    border: 0.5px black solid;
+    outline: 0.5px black solid;
 }
 
 .grid-box-color-change{
