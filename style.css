@@ -24,8 +24,6 @@ body{
 
 .grid-mother-box{
     display: grid;
-    grid-template-columns: repeat(24, 1fr);
-    grid-template-rows: repeat(24, 1fr);
     justify-content: center;
     height: 400px;
     width: 400px;
@@ -36,5 +34,5 @@ body{
 }
 
 .grid-box-color-change{
-    background-color:grey;
+    background-color:blue;
 }
