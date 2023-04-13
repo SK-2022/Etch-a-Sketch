@@ -43,7 +43,10 @@ promptButton.addEventListener('click', () => {
  
    // Select all elements with the class of 'grid-box'
     const boxes = document.querySelectorAll('.grid-box')
-    
+    //Removes the color of all the boxes that already have their color changed
+    boxes.forEach((box) => {
+        box.classList.remove('grid-box-color-change')
+    })
     //For each item selected(can be any name in () but I have conveniently named it 'box'), add an event
     // listener that causes a new class 'grid-box-color-change' to be added.
     boxes.forEach((box) => 
