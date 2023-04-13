@@ -12,20 +12,24 @@ body{
     text-align: center;
 }
 
-.change-grid-size{
-       
+.button-container{
     text-align: center;
+}
+
+.change-grid-size{
+    margin-bottom: 4rem;
     outline: 0;
     cursor: pointer;
     border: none;
-    padding: 0 56px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 7px;
+    padding: 0 5.6rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 0.7rem;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 2rem;
+    font-family: "Delicious Handrawn", "sans-serif";
     background: #fff;
-    color: #696969;
+    color: #4b4b4b;
     box-shadow: 0 4px 14px 0 rgb(0 0 0 / 10%);
     transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
 }
