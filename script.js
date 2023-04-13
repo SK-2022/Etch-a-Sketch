@@ -16,16 +16,18 @@ gridMotherBox.style.gridTemplateRows = `repeat(16, 1fr)`
     
     //For each item selected(can be any name in () but I have conveniently named it 'box'), add an event
     // listener that causes the background color of any box entered with a mouse to change to a random rgb value
-    boxes.forEach((box) => 
-    box.addEventListener('mouseenter', function() {
+       
+    boxes.forEach((box) => {
+        box.addEventListener('mouseenter', function() {
+       
+        let redValue = Math.floor(Math.random() * 255)
+        let greenValue = Math.floor(Math.random() * 255)
+        let blueValue = Math.floor(Math.random() * 255)
+        let rgbValue = `rgb(${redValue},${greenValue},${blueValue})`
 
-    let redValue = Math.floor(Math.random() * 255)
-    let greenValue = Math.floor(Math.random() * 255)
-    let blueValue = Math.floor(Math.random() * 255)
-    let rgbValue = `rgb(${redValue},${greenValue},${blueValue})`
-
-    box.style.backgroundColor = rgbValue
-}))
+        box.style.backgroundColor = rgbValue
+         })
+        })
 
 
 
@@ -58,7 +60,7 @@ promptButton.addEventListener('click', () => {
 
     //For each item selected(can be any name in () but I have conveniently named it 'box'), add an event
     // listener that causes the background color of any box entered with a mouse to change to a random rgb value
-    boxes.forEach((box) => 
+    boxes.forEach((box) => {
         box.addEventListener('mouseenter', function() {
        
         let redValue = Math.floor(Math.random() * 255)
@@ -67,6 +69,6 @@ promptButton.addEventListener('click', () => {
         let rgbValue = `rgb(${redValue},${greenValue},${blueValue})`
 
         box.style.backgroundColor = rgbValue
-    }))
-
-})
+         })
+        })
+     });
